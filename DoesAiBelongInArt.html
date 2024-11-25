@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Does AI Belong In Works Of Art?</title>
+    <!-- CSS -->
+    <style>
+		.bals {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		div.balls{
+			font-size: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+        html {
+            scroll-behavior: smooth;
+        }
+		html: focus-within {
+			scroll-behavior: smooth; !important;
+		}
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            color: gold;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        nav {
+            flex: 1 1 200px;
+            background: #666;
+            padding: 10px;
+            box-sizing: border-box;
+			bottom: 0;
+			right: 0;
+			position: fixed;
+        }
+
+        article {
+            flex: 2 1 400px;
+            padding: 20px;
+            background-color: #f1f1f1;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        li a:hover {
+            background-color: #f08a33;
+            color: white;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        @media (max-width: 600px) {
+            section {
+                flex-direction: column;
+            }
+
+            nav, article {
+                flex: 1 1 auto;
+                margin-bottom: 10px;
+            }
+        }
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+			position: fixed;
+		}
+
+		.navbar a {
+			float: center;
+			font-size: 16px;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: center;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			cursor: pointer;
+			font-size: 16px;  
+			border: none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+			background-color: red;
+		}
+
+	.dropdown-content {
+			display: none;
+			position: fixed;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			cursor: pointer;
+		}
+
+		.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+			.dropdown-content a:hover {
+			background-color: #ddd;
+		}
+
+		.show {
+			display: block;
+		}
+	div.a {
+	text-align: right;
+	}
+    </style>
+</head>
+
+<body>
+<!--Javascript-->
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+        // JavaScript function for smooth scrolling to a specific section
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+</script>
+
+<div class="navbar">
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Navigation
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+                <a onclick="scrollToSection('what-defines-art')">First of all... What defines art?</a>
+                <a onclick="scrollToSection('ai-in-music')">AI In Music</a>
+                <a onclick="scrollToSection('ai-in-actual-art')">AI In Actual Art</a>
+                <a onclick="scrollToSection('ai-in-literature')">AI In Literature</a>
+				<a onclick="scrollToSection('procon')">Pros and Cons Of AI</a>
+                <a onclick="scrollToSection('Sor')">Sources</a>
+  </div>
+  </div> 
+</div>
+
+    <header>
+        <h1>Does AI Belong In Works Of Art?</h1>
+    </header>
+    <h3>A popular topic amongst artists, musicians and writers alike.</h3>
+
+<div class="a">
+
+    <section>
+		<img src="Guy-thinking.jpg" alt="Guy thinking" width="200" height="5">
+        <article id="what-defines-art">
+            <h2>First of all... What defines art & AI?</h2>
+            <p>
+			Art is the expression or application of human creative skill and imagination, typically in a visual<br> form such as painting or sculpture, producing works to <br>be appreciated primarily for their beauty or emotional power. <i>(Oxford Languages)</i>
+			</p>
+			<p>AI, also known as artificial intelligence, is the <br> ability of a digital computer or <br>computer-controlled robot to perform tasks commonly associated with intelligent beings. <i>(Britannica)</i></p>
+            <p>With this we can see that art is meant to be made by humans and for humans which requires skill and imagination.</p>
+			<p></p>
+			<p>For now, we will categorize art into 3 subjects which are music, imagery art and literature.</p>
+        </article>
+    </section>
+	
+	<section>
+		<img src="T4reb.jpg" alt="treble-cleff" width="300" height="5">
+
+        <article id="ai-in-music">
+            <h2>AI In Music</h2>
+            <p>Music is art that is concerned with combining vocal or instrumental sounds for 
+			beauty of form or emotional expression.</p>
+            <p>Some people have concerns whether AI strips away the cultural and the special human inspirations that music have and if AI should be considered a tool that is used for 
+			assisting with people who is having writer's block. Personally, I would think that AI should be used sparingly either to generate ideas that can be built upon or if the song 
+			is relevant to AI.
+			</p>
+        </article>
+    </section>
+	
+	<section>
+		<img src="Guy-painting.jpg" alt="Blackbeard writing meme haha wkwkwkw" width="400" height="10">
+
+        <article id="ai-in-actual-art">
+            <h2>AI In Actual Art</h2>
+            <p>Art is a visual object or experience consciously created through an expression of skill or imagination. 
+			The term art encompasses diverse media such as painting, sculpture, 
+			printmaking, drawing, decorative arts, photography, and installation. </p>
+            <p>People have concerns regarding AI taking the jobs of artists and photographers. People also may consider companies who utilise AI generated images and videos are lazy
+			and lacking in effort. But AI could assist artists that are struggling with creativity. AI could also provide a starter for the marketing department in smaller companies.
+			</p>
+        </article>
+    </section>
+	
+	<section>
+		<img src="Write.jpg" alt="Blackbeard writing meme haha wkwkwkw" width="200" height="50">
+
+        <article id="ai-in-literature">
+            <h2>AI In Literature</h2>
+            <p>AI’s global rise requires international cooperation in both development and regulation. In literature, 
+			it offers creative support but risks too much reliance, which could negatively affect critical thinking and literature skills. 
+			A study on Indonesian students highlights AI's role in education but warns of dependency. Globally, 
+			AI-authored books challenge authenticity and societal norms, while nationally, countries must decide their sides on AI-generated content.</p>
+            <p>The fear of AI stems from its unpredictability and rapid growth, despite being inspired by human creativity.</p>
+        </article>
+    </section>
+	
+	<div class="balls">
+	
+	<h2>Pros and Cons of AI</h2>
+	
+	<section>
+	<article id="procon">
+	<table border="4" class="bals">
+	<tr>
+	<th>Pros</th>
+	<th>Cons</th>
+	</tr>
+	
+	<tr>
+	<td>AI saves the user's time as it is able to speed up <br>processes that can be deemed time consuming</td>
+	<td>User's may get too dependant on AI</td>
+	</tr>
+	
+	<tr>
+	<td>AI could be used as a tool to overcome writer's block</td>
+	<td>User's may lose certain skills in art especially their <br>creativity and critical thinking skills</td>
+	</tr>
+	
+	<tr>
+	<td>AI can automate jobs and reduce the <br>amount of funds required for marketing</td>
+	<td>AI can be seen as lazy to use in big <br>companies and contribute to the loss of jobs</td>
+	</tr>
+	</table>
+	
+	</section>
+	
+	</div>
+    </section>
+
+		<section>
+        <article id="Sor">
+            <h2>Sources</h2>
+			<p>"in which the author communicates ideas to readers, who then connect to the story on an individual level." - (Sasha Blakely, 2023. Connecting Art and Literature / Overviews & Benefits, study.com)<br>
+“the expression or application of human creative skill and imagination” - (Oxford Languages)<br>
+“perform tasks associated with intelligent beings” - (B.J Copeland, 2024. Artificial Intelligence, Britannica)
+“reflects the ideas of the people in the past, present and future.” - (What Is the Importance of Literature in Society?, activateleadership.co.za)<br>
+“A study done by Yale University found that regular readers live two years longer than non-readers on average. Those who read around 3.5 hours a week or more were 23% less likely to die over the 12-year follow-up period than non-readers.” - (Elka Jacobs-Pinson. 25 Eye-Opening Statistics on Benefits of Reading, Crown Counselling)<br>
+“The world's most innovative teams, authors, and creators consider Squibler the best novel writing software.” - (Squibler: AI Story Writer, https://www.squibler.io/)<br>
+“Tim Boucher is a common example, a writer who used AI to create 120 novels.” - (Beatric Nolan, 2024. An author is facing backlash for using AI to write 120 books, He says he’s misunderstood, Business Insider.)<br>
+“Through a survey of Indonesian Language and Literature Education students, this study shows that AI has become a popular tool to support the learning process.” - (Bahar Amal, Aqillah Khaierunnisa, Elisa Rahmawati, Naora Syifa, Pramesvary Nazwa Dewani, Putri Ratih Septariyani, Syahrul Ilham Fauzi. Use of Artificial Intelligence Applications: Friend or Threat for Indonesian Language and Literature Education Students at Singaperbangsa University of Karawang)<br>
+“it was a science-fiction writer’s works that inspired experts in AI.” - (AI and literature: is it really all for the best?, UNESCO Courier)<br>
+“First, the machine is trained on a large dataset of existing stories” - (AIContenfy Team, 2023. The art of AI-generated storytelling, AIContenfy.)</p>
+			<br>
+            <a href="https://www.britannica.com/art/music">https://www.britannica.com/art/music</a>
+			<br>
+			<a href="https://www.britannica.com/art/music">https://www.britannica.com/art/music</a>
+			<br>
+			<p>Oxford Languages</p>
+			<br>
+			<p>Music Theory Academy</p>
+			<br>
+			<p>One Piece</p>
+    </section>
+</div>
+    <footer>Made by Fakhry, Airysa, Noel, Renata</footer>
+</body>
+</html>

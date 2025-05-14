@@ -6,15 +6,60 @@
     <title>Does AI Belong In Works Of Art?</title>
     <!-- CSS -->
     <style>
-		.bals {
-			margin-left: auto;
-			margin-right: auto;
+	.jerry {
+  display: inline-block; /* Ensures padding and text are treated as a block element */
+  padding: 1px 20px; /* Adds space around the text */
+  background: linear-gradient(to right, #EDDE49, #808080); /* A modern gradient background */
+  color: white;
+  text-decoration: none; /* Removes underline from links */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.jerry:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+.bottom-header {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #666;
+    color: gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1px;
+    z-index: 1000;
+    text-align: center;
+}
+
 		}
-		div.balls{
-			font-size: 20px;
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* optional, for vertical centering */
+}
+
+.john {
+	display: flex;
+	font-size: 30px;
+	justify-content: center;
+}
+
+div.balls {
+    font-size: 20px;
+    text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+}
+
 		}
         html {
             scroll-behavior: smooth;
@@ -46,10 +91,6 @@
             text-align: center;
             margin-top: 0;
         }
-	footer {
-  	width:100%;
- 	position:absolute;
-  	bottom:0;
 }
 
         section {
@@ -117,10 +158,10 @@
             }
         }
 		.navbar {
+		position: fixed;
 			overflow: hidden;
 			background-color: #333;
 			font-family: Arial, Helvetica, sans-serif;
-			position: fixed;
 		}
 
 		.navbar a {
@@ -180,7 +221,7 @@
 			display: block;
 		}
 	div.a {
-	text-align: right;
+	text-align: left;
 	}
     </style>
 </head>
@@ -229,17 +270,29 @@ window.onclick = function(e) {
         <h1>Does AI Belong In Works Of Art?</h1>
     </header>
     <h3>A popular topic amongst artists, musicians and writers alike.</h3>
+	<p style="font-size:15px; display: flex; justify-content:center;">Published: 14/05/2025</p>
+	
+<div class="bottom-header">
+    <h3>Support our cause by filling out this form. <a class="jerry" href="https://forms.gle/ALpy6NPq5GG6dV278">Form Link</a></h3>
+</div>
+
+
 
 <div class="a">
 
     <section>
+	<div style="float: right; width: 200px: height: 100%;">
 		<img src="Guy-thinking.jpg" alt="Guy thinking" width="200" height="5">
+	</div>
         <article id="what-defines-art">
             <h2>First of all... What defines art & AI?</h2>
             <p>
-			Art is the expression or application of human creative skill and imagination, typically in a visual<br> form such as painting or sculpture, producing works to <br>be appreciated primarily for their beauty or emotional power. <i>(Oxford Languages)</i>
+			General arts is the expression or application of human creative skill and imagination, often to communicate ideas,
+			emotions, or experiences. General arts covers all aspect, such as Music, Art, and Literature. General art can be 	realistic or abstract , traditional or experimental, and its interpretation often depends on the viewer’s perspective.
+			 Throughout history, art has played a crucial role in shaping societies, preserving heritage, and inspiring change. 
+			It continues to evolve as new technologies and ideas emerge, but its core purpose remains the same: to express and connect. 
 			</p>
-			<p>AI, also known as artificial intelligence, is the <br> ability of a digital computer or <br>computer-controlled robot to perform tasks commonly associated with intelligent beings. <i>(Britannica)</i></p>
+			<p>AI, also known as artificial intelligence, is the ability of a digital computer or computer-controlled robot to perform tasks commonly associated with intelligent beings. <i>(Britannica)</i></p>
             <p>With this we can see that art is meant to be made by humans and for humans which requires skill and imagination.</p>
 			<p></p>
 			<p>For now, we will categorize art into 3 subjects which are music, imagery art and literature.</p>
@@ -247,52 +300,87 @@ window.onclick = function(e) {
     </section>
 	
 	<section>
+	<div style="float: right; width: 200px; height: 100%;">
 		<img src="T4reb.jpg" alt="treble-cleff" width="300" height="5">
+		</div>
 
         <article id="ai-in-music">
             <h2>AI In Music</h2>
             <p>Music is art that is concerned with combining vocal or instrumental sounds for 
 			beauty of form or emotional expression.</p>
-            <p>Some people have concerns whether AI strips away the cultural and the special human inspirations that music have and if AI should be considered a tool that is used for 
-			assisting with people who is having writer's block.
+            <p>AI arts could lead to the misinterpretations of culturally important arts by gathering the wrong sources of information through code errors and misleading information on the media. 
+
+ 
+
+This is the case where AI uses instruments from the wrong region to be used in a song that was prompted to be from a different region as how AI works based on algorithm and its simplification. 
+
+ 
+
+AI could also overshadow the lesser known artists from lesser known countries as it creates a lot of competition that would be difficult for artists to beat. So, to prevent AI from using your music, you can be signed to a label or have your music be protected by copyright laws or have producer tags to your works. Currently, there are no ways to add anti AI filters to music.
 			</p>
         </article>
     </section>
 	
 	<section>
-		<img src="Guy-painting.jpg" alt="Blackbeard writing meme haha wkwkwkw" width="400" height="10">
+	<div style="float: right; width: 200px; height: 100%;">
+		<img src="Guy-painting.jpg" alt="Guy writing" width="400" height="10">
+	</div>
 
         <article id="ai-in-actual-art">
-            <h2>AI In Actual Art</h2>
-            <p>Art is a visual object or experience consciously created through an expression of skill or imagination. 
-			The term art encompasses diverse media such as painting, sculpture, 
-			printmaking, drawing, decorative arts, photography, and installation. </p>
-            <p>People have concerns regarding AI taking the jobs of artists and photographers. People also may consider companies who utilise AI generated images and videos are lazy
-			and lacking in effort. But AI could assist artists that are struggling with creativity. AI could also provide a starter for the marketing department in smaller companies.
+            <h2>AI In Visual Art</h2>
+            <p>AI has the potential to revolutionize the art world by providing faster processes, tracking, and assessing value. However, it raises ethical questions about authorship, creativity, and emotion. AI-generated art is gaining popularity, potentially disrupting the traditional art market. Marketplaces like 1stDibs, Artsy, and Saatchi use AI algorithms to recommend artworks, but may overlook lesser-known artists. AI tools are being used in museums and galleries to identify overlooked artists, monitor artworks, and design exhibitions. 
+
+Some solutions to prevent AI from stealing art as data include digital "cloaking" tools like Glaze and Nightshade. Glaze is designed to protect human artists by disrupting style mimicry, while Nightshade is an offensive tool for artists to disrupt models that scrape their images without consent. 
 			</p>
         </article>
     </section>
 	
 	<section>
+	<div style="float: right; width: 200px; height: 100%;">
 		<img src="Write.jpg" alt="Blackbeard writing meme haha wkwkwkw" width="200" height="50">
+	</div>
 
         <article id="ai-in-literature">
             <h2>AI In Literature</h2>
-            <p>AI’s global rise requires international cooperation in both development and regulation. In literature, 
-			it offers creative support but risks too much reliance, which could negatively affect critical thinking and literature skills. 
-			A study on Indonesian students highlights AI's role in education but warns of dependency. Globally, 
-			AI-authored books challenge authenticity and societal norms, while nationally, countries must decide their sides on AI-generated content.</p>
-            <p>The fear of AI stems from its unpredictability and rapid growth, despite being inspired by human creativity.</p>
+            <p>With the recent rise and popularity of artificial intelligence (AI), companies have utilized the technology in different ways. For example, Squibler advertises itself as the ‘best’ novel-writing tool, and Story Engine can create whole novels out of prompts. Writers use it too. Tim Boucher is a writer who used AI to create 120 novels.  
+
+AI is also capable of misusing the stories available online. For example, writer Jane Friedman found fraudulent novels being sold online, claiming to be her works. They turned out to be AI-generated books, written using information in her existing novels. Author George RR Martin sued OpenAI for copyright infringement by training their models on the author’s books. As AI is trained on data available on the internet, the works of writers are often stolen without their consent. 
+
+However, there are ways to overcome this by preventing AI from accessing websites and stealing literary content. A method is by using the robot.txt file. Using a robot.txt file, web crawlers or bots, including AI bots, that collect information from websites can be blocked from accessing your site. 
+
+First, create a file on a plain text website, like Notepad and TextEdit, and naming it robot.txt. Then, save the file as robot.txt without any extensions, as word processors can prevent the file from working. To locate your website’s new robot.txt file, simply add “/robot.txt” to the end of the website’s URL. It has to be placed as “www.example.com/robots.txt”, not as a subdirectory. Robot.txt files can also be used for PDFs and HTMLs. 
+
+If the file is accessible, the contents will be displayed in plain text format. Then, manually insert directives to block certain AI crawlers on your robot.txt file as disallowed user agents. The result is that bots from these AI programs can no longer access and crawl the website. </p>
+
+	<h2 class="john">Here are examples of AI bots to block: </h2>
+
+	<div class="balls">
+	<table border="4" class="balls">
+	<tr>
+	<th></th>
+	<th>User-agent: Google-Extended</th>
+	<th>User-agent: GPTBot</th>
+	<th>User-agent: anthropic-ai</th>
+	</tr>
+	
+	<tr>
+	<td>Disallow: /</td>
+	<td>This blocks Google’s user agent that trains Gemini and other AI products. </td>
+		<td>This blocks ChatGPT’s bots from using web information to train future models. </td>
+			<td>This blocks Anthropic AI (Claude) from using your website’s information. </td>
+	</tr>
+	</table>
+	</div>
+
         </article>
     </section>
 	
+		<h2 class="john">Pros and Cons of AI</h2>
+		
 	<div class="balls">
-	
-	<h2>Pros and Cons of AI</h2>
-	
 	<section>
 	<article id="procon">
-	<table border="4" class="bals">
+	<table border="4" class="balls">
 	<tr>
 	<th>Pros</th>
 	<th>Cons</th>
@@ -319,7 +407,7 @@ window.onclick = function(e) {
 	</div>
     </section>
 
-		<section>
+		<section style="text-align: right">
         <article id="Sor">
             <h2>Sources</h2>
 			<p>"in which the author communicates ideas to readers, who then connect to the story on an individual level." - (Sasha Blakely, 2023. Connecting Art and Literature / Overviews & Benefits, study.com)<br>
@@ -331,7 +419,12 @@ window.onclick = function(e) {
 “Tim Boucher is a common example, a writer who used AI to create 120 novels.” - (Beatric Nolan, 2024. An author is facing backlash for using AI to write 120 books, He says he’s misunderstood, Business Insider.)<br>
 “Through a survey of Indonesian Language and Literature Education students, this study shows that AI has become a popular tool to support the learning process.” - (Bahar Amal, Aqillah Khaierunnisa, Elisa Rahmawati, Naora Syifa, Pramesvary Nazwa Dewani, Putri Ratih Septariyani, Syahrul Ilham Fauzi. Use of Artificial Intelligence Applications: Friend or Threat for Indonesian Language and Literature Education Students at Singaperbangsa University of Karawang)<br>
 “it was a science-fiction writer’s works that inspired experts in AI.” - (AI and literature: is it really all for the best?, UNESCO Courier)<br>
-“First, the machine is trained on a large dataset of existing stories” - (AIContenfy Team, 2023. The art of AI-generated storytelling, AIContenfy.)</p>
+“First, the machine is trained on a large dataset of existing stories” - (AIContenfy Team, 2023. The art of AI-generated storytelling, AIContenfy.)
+<br>
+“Tim Boucher is a writer who used AI to create 120 novels.” - (Beatric Nolan, 2024. An author is facing backlash for using AI to write 120 books, He says he’s misunderstood, Business Insider.) 
+<br>
+“First, the machine is trained on a large dataset of existing stories” - (AIContenfy Team, 2023. The art of AI-generated storytelling, AIContenfy.) 
+</p>
 			<br>
             <a href="https://www.britannica.com/art/music">https://www.britannica.com/art/music</a>
 			<br>
